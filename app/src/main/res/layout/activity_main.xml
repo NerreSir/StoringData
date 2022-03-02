@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/agetextView"
+        android:layout_width="218dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="119dp"
+        android:ems="10"
+        android:hint="enter age"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/nameresulttextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nametextView" />
+
+    <EditText
+        android:id="@+id/nametextView"
+        android:layout_width="218dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginBottom="7dp"
+        android:ems="10"
+        android:hint="enter name"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/agetextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/savebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="save"
+        android:text="Save It"
+        app:layout_constraintStart_toStartOf="@+id/ageresulttextView"
+        app:layout_constraintTop_toBottomOf="@+id/ageresulttextView" />
+
+    <TextView
+        android:id="@+id/ageresulttextView"
+        android:layout_width="221dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Your age: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/deletebutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameresulttextView" />
+
+    <TextView
+        android:id="@+id/nameresulttextView"
+        android:layout_width="223dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="13dp"
+        android:gravity="center"
+        android:text="Your name: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ageresulttextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agetextView" />
+
+    <Button
+        android:id="@+id/deletebutton"
+        android:layout_width="85dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="66dp"
+        android:onClick="delete"
+        android:text="Delete"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ageresulttextView"
+        app:layout_constraintTop_toBottomOf="@+id/ageresulttextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
